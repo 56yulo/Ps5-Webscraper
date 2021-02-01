@@ -6,7 +6,8 @@ import selenium.common.exceptions
 
 keyboard = Controller()
 
-
+PW = 'Password'
+UN = 'Username'
 
 ELE = False
 
@@ -14,7 +15,6 @@ ELE = False
 class Dis :
     def __init__(self, PW, UN) :
         self.driver = webdriver.Chrome()
-        #self.url = "https://www.bestbuy.ca/en-ca/product/dji-mavic-mini-quadcopter-drone-fly-more-combo/13985755"
         sleep(50)
         self.url = "https://www.bestbuy.ca/en-ca/product/playstation-5-digital-edition-console-online-only/14962184"
         self.xpath = "//button[@class='button_2Xgu4 primary_oeAKs addToCartButton_1op0t addToCartButton regular_cDhX6']"
@@ -52,47 +52,7 @@ class Dis :
                 .click()
             sleep(2)
 
-            #spacer
-
-            self.driver.get('https://www.instagram.com/canadazi/')
-            sleep(.5)
-            self.driver.find_element_by_xpath("//button[@class='sqdOP  L3NKy _4pI4F   _8A5w5    ']").click()
-            sleep(2)
-            mbox = self.driver.find_element_by_tag_name('textarea')
-            mbox.send_keys('PS5 is back in stock at bestbuy: https://www.bestbuy.ca/en-ca/product/playstation-5-digital-edition-console-online-only/14962184')
-            sleep(1)
-            mbox.send_keys(Keys.RETURN)
-            sleep(1)
-
-            #spacer
-
             self.driver.get('https://www.instagram.com/dev0n56/')
-            sleep(.5)
-            self.driver.find_element_by_xpath("//button[@class='sqdOP  L3NKy _4pI4F   _8A5w5    ']").click()
-            sleep(2)
-            mbox = self.driver.find_element_by_tag_name('textarea')
-            mbox.send_keys(
-                'PS5 is back in stock at bestbuy: https://www.bestbuy.ca/en-ca/product/playstation-5-digital-edition-console-online-only/14962184')
-            sleep(1)
-            mbox.send_keys(Keys.RETURN)
-            sleep(1)
-
-            #Spacer
-
-            self.driver.get('https://www.instagram.com/connor.corkill/')
-            sleep(.5)
-            self.driver.find_element_by_xpath("//button[@class='sqdOP  L3NKy _4pI4F   _8A5w5    ']").click()
-            sleep(2)
-            mbox = self.driver.find_element_by_tag_name('textarea')
-            mbox.send_keys(
-                'PS5 is back in stock at bestbuy: https://www.bestbuy.ca/en-ca/product/playstation-5-digital-edition-console-online-only/14962184')
-            sleep(1)
-            mbox.send_keys(Keys.RETURN)
-            sleep(1)
-
-            # Spacer
-
-            self.driver.get('https://www.instagram.com/logan_flash06/')
             sleep(.5)
             self.driver.find_element_by_xpath("//button[@class='sqdOP  L3NKy _4pI4F   _8A5w5    ']").click()
             sleep(2)
