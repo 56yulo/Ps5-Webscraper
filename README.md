@@ -12,3 +12,5 @@ UN = to your username
 
 In line 70 change: self.driver.get('https://www.instagram.com/dev0n56/')
 To your username.
+
+(Also make sure to keep the chrome diver and python script in the same folder.)
