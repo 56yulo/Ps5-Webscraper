@@ -10,7 +10,7 @@ The last thing you're going to want to-do is change
 PW = to your password
 UN = to your username
 
-In line 70 change: self.driver.get('https://www.instagram.com/dev0n56/')
+In line 55 change: self.driver.get('https://www.instagram.com/dev0n56/')
 To your username.
 
 (Also make sure to keep the chrome diver and python script in the same folder.)
